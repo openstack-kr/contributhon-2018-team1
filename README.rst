@@ -13,6 +13,19 @@ participants.
  * 오픈스택 한국 커뮤니티 페이스북: https://www.facebook.com/groups/openstack.kr
  * Slack (초대 필요): https://openstackkr.slack.com/messages/GC9R9RFA9/
 
+* 팀원 (가나다순)
+
+ * 조재호
+ * 이우람
+ * 이재연
+ * 강상규
+ * 배중욱
+ * 김계현
+ * 김선오
+ * 이형건
+ * 이도건
+ * 박순렬
+
 Recommended References
 ======================
 
