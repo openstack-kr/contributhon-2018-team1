@@ -1,8 +1,10 @@
++++++++
 Vagrant
 +++++++
 
 Vagrant는 간소화된 가상머신(VM, Virtual Machine) 관리 서비스 이다.
 
+=====================
 CentOS6에 Vagrant 설치
 =====================
 
