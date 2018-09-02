@@ -40,28 +40,30 @@ https://github.com/openstack-kr/contributhon-2018-team1 사이트에서 "Fork" �
 
 ::
 
- mkdir -p /work
- cd /work
+ mkdir -p /work/devstack
+ cd /work/devstack
  git clone git@github.com:pnuskgh/contributhon-2018-team1.git
  cd contributhon-2018-team1
+ vim .gitignore
+     *.swp
  
  #--- 파일 추가
  vim 새파일_이름
- cd /work/contributhon-2018-team1
+ cd /work/devstack/contributhon-2018-team1
  git add *
  git commit
  git push
 
  #--- 파일 이름 변경
  git mv 원본_파일 새이름_파일
- cd /work/contributhon-2018-team1
+ cd /work/devstack/contributhon-2018-team1
  git add *
  git commit
  git push
 
  #--- 파일 삭제
  git rm 파일_이름
- cd /work/contributhon-2018-team1
+ cd /work/devstack/contributhon-2018-team1
  git add *
  git commit
  git push
