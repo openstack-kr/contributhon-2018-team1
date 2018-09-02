@@ -58,39 +58,19 @@ VM 관리
  #---    port는 vagrant up시 표시되는 메시지에서 확인할 것
  vagrant ssh                                                 #--- VM에 ssh로 접속
 
-Day 2: (TBD)
-============
 
- * (TBD)
+=============
+Snapshot 관리
+=============
 
-Contributing
-============
+::
 
-Our community welcomes all people interested in open source cloud
-computing, and encourages you to join the `OpenStack Foundation
-<http://www.openstack.org/join>`_.
+ vagrant snapshot push                                       #--- 환경 저장
+ vagrant ssh                                                 #--- 환경 저장 후 여러가지 작업을 한다.
+ vagrant snapshot pop                                        #--- 저장(push)된 환경으로 복구
+ 
+ vagrant snapshot save ${name}                               #--- Snapshot 생성
+ vagrant snapshot restore ${name}                            #--- Snapshot으로 복구
+ vagrant snapshot list                                       #--- Snapshot 목록 조회
+ vagrant snapshot delete ${name}                             #--- Snapshot을 삭제
 
-The best way to get involved with the community is to talk with others
-online or at a meet up and offer contributions through our processes,
-the `OpenStack wiki <http://wiki.openstack.org>`_, blogs, or on IRC at
-``#openstack`` on ``irc.freenode.net``.
-
-We welcome all types of contributions, from blueprint designs to
-documentation to testing to deployment scripts.
-
-If you would like to contribute to the documents, please see the
-`Documentation HowTo <https://wiki.openstack.org/wiki/Documentation/HowTo>`_.
-
-
-Bugs
-====
-
-Bugs should be filed on Launchpad, not GitHub:
-
-   https://bugs.launchpad.net/openstack
-
-
-Installing
-==========
-Refer to http://docs.openstack.org to see where these documents are published
-and to learn more about the OpenStack project.
