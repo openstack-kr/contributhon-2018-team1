@@ -4,23 +4,24 @@ Vagrant
 
 Vagrant는 간소화된 가상머신(VM, Virtual Machine) 관리 서비스 이다.
 
+
 =====================
 CentOS6에 Vagrant 설치
 =====================
 
 ::
-
  rpm -ivh https://releases.hashicorp.com/vagrant/2.1.4/vagrant_2.1.4_x86_64.rpm  
  vagrant -v
 
+
+==========================
 Ubuntu 18.04.1 LTS box 생성
 ==========================
 
-mkdir -p /work/vagrant/Ubuntu18
-cd /work/vagrant/Ubuntu18
-
-#--- Ubuntu 18.04.1 LTS 설치를 위한 Vagrantfile을 생성 한다.
+Ubuntu 18.04.1 LTS 설치를 위한 Vagrantfile을 작성한 후 box를 생성 한다.
 ::
+ mkdir -p /work/vagrant/Ubuntu18
+ cd /work/vagrant/Ubuntu18
  vi Vagrantfile
     Vagrant.configure("2") do |config|
       config.vm.box = "ubuntu/xenial64"
@@ -31,16 +32,27 @@ cd /work/vagrant/Ubuntu18
         vb.cpus = "6"
       end
     end
- vagrant init [${box_name}]                                  #--- Vagrantfile로부터 생성되는 환경 초기화
+ vagrant init                                                #--- Vagrantfile로부터 생성되는 환경 초기화
  vagrant box list                                            #--- Vagrant Box 목록 조회
 
 
-Day 1: Aug 31, 2018
-===================
+=======
+VM 관리
+=======
 
- * DevStack 설명
- * Python 프로젝트에 대한 virtualenv, tox 등 빌드 환경 소개
- * 컨트리뷰톤 프로젝트 논의
+::
+ vagrant up                                                  #--- startup
+ vagrant reload                                              #--- 변경된 Vagrantfile 적용 (shutdown & startup)
+ vagrant halt                                                #--- shutdown
+ vagrant destroy -f                                          #--- shutdown & destroy
+ 
+ vagrant status                                              #--- 상태 조회
+ vagrant suspend                                             #--- VM 멈춤
+ vagrant resume                                              #--- 멈춘 VM 다시 시작
+ 
+ #--- ssh 127.0.0.1:2222, vagrant / vagrant
+ #---    port는 vagrant up시 표시되는 메시지에서 확인할 것
+ vagrant ssh                                                 #--- VM에 ssh로 접속
 
 Day 2: (TBD)
 ============
