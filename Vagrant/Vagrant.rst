@@ -6,7 +6,8 @@ Vagrant는 간소화된 가상머신(VM, Virtual Machine) 관리 서비스 이�
 CentOS6에 Vagrant 설치
 =====================
 
- rpm -ivh https://releases.hashicorp.com/vagrant/2.1.4/vagrant_2.1.4_x86_64.rpm  <br/>
+ rpm -ivh https://releases.hashicorp.com/vagrant/2.1.4/vagrant_2.1.4_x86_64.rpm  
+ 
  vagrant -v
 
 Day 0: (사전 모임)
