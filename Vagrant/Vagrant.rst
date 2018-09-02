@@ -20,7 +20,9 @@ Ubuntu 18.04.1 LTS box 생성
 ==========================
 
 Ubuntu 18.04.1 LTS 설치를 위한 Vagrantfile을 작성한 후 box를 생성 한다.
+
 :: 
+
  mkdir -p /work/vagrant/Ubuntu18
  cd /work/vagrant/Ubuntu18
  vi Vagrantfile
