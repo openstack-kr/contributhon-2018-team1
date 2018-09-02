@@ -10,15 +10,26 @@ CentOS6에 Vagrant 설치
  
  vagrant -v
 
-Day 0: (사전 모임)
-==================
+Ubuntu 18.04.1 LTS box 생성
+==========================
 
- * 2018 - 컨트리뷰톤 개요 (오픈스택)
- 
-   * https://www.slideshare.net/ianychoi/2018-kosslab-openstack
-  
- * 멘토 소개
- * 프로젝트 진행을 위한 멘토-멘티 연결
+mkdir -p /work/vagrant/Ubuntu18
+cd /work/vagrant/Ubuntu18
+
+#--- Ubuntu 18.04.1 LTS 설치를 위한 Vagrantfile을 생성 한다.
+vi Vagrantfile
+   Vagrant.configure("2") do |config|
+     config.vm.box = "ubuntu/xenial64"
+     config.vm.network "forwarded_port", guest: 80, host: 8080
+     config.vm.provider "virtualbox" do |vb|
+         vb.name = "ubuntu"
+         vb.memory = "6144"
+         vb.cpus = "6"
+     end
+   end
+vagrant init [${box_name}]                                  #--- Vagrantfile로부터 생성되는 환경 초기화
+vagrant box list                                            #--- Vagrant Box 목록 조회
+
 
 Day 1: Aug 31, 2018
 ===================
