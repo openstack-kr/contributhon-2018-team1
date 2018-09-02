@@ -44,6 +44,7 @@ VM 관리
 =======
 
 ::
+ 
  vagrant up                                                  #--- startup
  vagrant reload                                              #--- 변경된 Vagrantfile 적용 (shutdown & startup)
  vagrant halt                                                #--- shutdown
