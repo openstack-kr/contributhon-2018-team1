@@ -12,7 +12,7 @@ CentOS6에 Vagrant 설치
 ::
  rpm -ivh https://releases.hashicorp.com/vagrant/2.1.4/vagrant_2.1.4_x86_64.rpm  
  vagrant -v
-
+::
 
 ==========================
 Ubuntu 18.04.1 LTS box 생성
