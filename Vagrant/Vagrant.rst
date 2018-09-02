@@ -5,6 +5,20 @@ Vagrant
 Vagrant는 간소화된 가상머신(VM, Virtual Machine) 관리 서비스 이다.
 
 
+========================
+CentOS6에 VirtualBox 설치
+========================
+
+Vagrant에서 사용할 VirtualBox를 설치 합니다
+
+::
+
+ wget -O /etc/yum.repos.d/virtualbox.repo http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
+ yum install VirtualBox-5.2
+  
+ virtualbox -help
+
+
 =====================
 CentOS6에 Vagrant 설치
 =====================
