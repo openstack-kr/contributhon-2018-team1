@@ -25,6 +25,7 @@ Ubuntu 18.04.1 LTS 설치를 위한 Vagrantfile을 작성한 후 box를 생성 �
 
  mkdir -p /work/vagrant/Ubuntu18
  cd /work/vagrant/Ubuntu18
+  
  vi Vagrantfile
     Vagrant.configure("2") do |config|
       config.vm.box = "ubuntu/xenial64"
