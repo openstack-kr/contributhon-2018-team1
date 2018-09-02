@@ -19,18 +19,19 @@ mkdir -p /work/vagrant/Ubuntu18
 cd /work/vagrant/Ubuntu18
 
 #--- Ubuntu 18.04.1 LTS 설치를 위한 Vagrantfile을 생성 한다.
-vi Vagrantfile
-   Vagrant.configure("2") do |config|
-     config.vm.box = "ubuntu/xenial64"
-     config.vm.network "forwarded_port", guest: 80, host: 8080
-     config.vm.provider "virtualbox" do |vb|
-         vb.name = "ubuntu"
-         vb.memory = "6144"
-         vb.cpus = "6"
-     end
-   end
-vagrant init [${box_name}]                                  #--- Vagrantfile로부터 생성되는 환경 초기화
-vagrant box list                                            #--- Vagrant Box 목록 조회
+::
+ vi Vagrantfile
+    Vagrant.configure("2") do |config|
+      config.vm.box = "ubuntu/xenial64"
+      config.vm.network "forwarded_port", guest: 80, host: 8080
+      config.vm.provider "virtualbox" do |vb|
+        vb.name = "Ubuntu18"
+        vb.memory = "6144"
+        vb.cpus = "6"
+      end
+    end
+ vagrant init [${box_name}]                                  #--- Vagrantfile로부터 생성되는 환경 초기화
+ vagrant box list                                            #--- Vagrant Box 목록 조회
 
 
 Day 1: Aug 31, 2018
