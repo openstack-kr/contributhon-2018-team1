@@ -127,6 +127,7 @@ sphinx-quickstart 실행시 설정값은 대부분 디폴트 값을 사용 한�
      source files. Use the Makefile to build the docs, like so:
         make builder
      where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
+ sudo make html                                             #--- html 파일 생성
 
 설치 완료 후 아래 URL로 접속 한다. 단, IP는 자신이 가진 서버의 IP를 사용 한다.
 * http://110.10.129.50:8080/sphinx/_build/html/index.html
