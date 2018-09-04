@@ -68,3 +68,28 @@ https://github.com/openstack-kr/contributhon-2018-team1 사이트에서 "Fork" �
  git commit
  git push
 
+
+====================
+원격 저장소 추가 관리
+====================
+
+원본 저장소(https://github.com/openstack-kr/contributhon-2018-team1)를 Fork하여 개인 저장소(https://github.com/pnuskgh/contributhon-2018-team1)를 만들어서 관리를 하면 몇가지 문제가 발생 한다.
+
+원본 저장소에 변경 사항이 발생하면 그 변경 사항이 개인 저장소에 반영이 되지 않는 문제 이다. 이는 원격 저장소를 추가하여 관리할 수 있다.
+
+::
+ 
+ cd /work/devstack/contributhon-2018-team1
+ git remote add OpenStack git@github.com:openstack-kr/contributhon-2018-team1.git
+ git remote -v                                              #--- 저의 경우 아래와 같이 표시 됩니다.  
+     OpenStack       git@github.com:openstack-kr/contributhon-2018-team1.git (fetch)
+     OpenStack       git@github.com:openstack-kr/contributhon-2018-team1.git (push)
+     origin  git@github.com:pnuskgh/contributhon-2018-team1.git (fetch)
+     origin  git@github.com:pnuskgh/contributhon-2018-team1.git (push)
+ 
+ git pull OpenStack master                                  #--- OpenStack 저장소의 master branch를 가져 온다.
+ 
+ git add *
+ git commit 
+ git push origin master                                     #--- origin 저장소의 master에 변경 사항을 반영 한다.
+
