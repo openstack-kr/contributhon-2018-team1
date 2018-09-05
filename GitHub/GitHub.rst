@@ -68,3 +68,60 @@ https://github.com/openstack-kr/contributhon-2018-team1 사이트에서 "Fork" �
  git commit
  git push
 
+====================
+원격 저장소 추가 관리
+====================
+
+원본 저장소(https://github.com/openstack-kr/contributhon-2018-team1)를 Fork하여 개인 저장소(https://github.com/pnuskgh/contributhon-2018-team1)를 만들어서 관리를 하면 몇가지 문제가 발생 한다.
+
+원본 저장소에 변경 사항이 발생하면 그 변경 사항이 개인 저장소에 반영이 되지 않는 문제 이다. 이는 원격 저장소를 추가하여 관리할 수 있다.
+
+::
+ 
+ cd /work/devstack/contributhon-2018-team1
+ git remote add OpenStack git@github.com:openstack-kr/contributhon-2018-team1.git
+ git remote -v                                              #--- 저의 경우 아래와 같이 표시 됩니다.  
+     OpenStack       git@github.com:openstack-kr/contributhon-2018-team1.git (fetch)
+     OpenStack       git@github.com:openstack-kr/contributhon-2018-team1.git (push)
+     origin  git@github.com:pnuskgh/contributhon-2018-team1.git (fetch)
+     origin  git@github.com:pnuskgh/contributhon-2018-team1.git (push)
+ 
+ git pull OpenStack master                                  #--- OpenStack 저장소의 master branch를 가져 온다.
+ 
+ git add *
+ git commit 
+ git push origin master                                     #--- origin 저장소의 master에 변경 사항을 반영 한다.
+
+
+=====================
+충돌 발생시 처리 방법
+=====================
+
+여러 리포지토리를 사용하거나 하나의 파일을 여러 사람이 수정하는 경우 충돌이 발생 한다. 이 경우 충돌이 발생한 파일을 수작업으로 수정하여야 한다.
+
+아래의 코드는 충돌 사례와 처리 방법 이다.
+
+::
+ 
+ git pull OpenStack master                                 #--- Pull 명령시 3개의 파일에서 충돌 발생
+     remote: Counting objects: 40, done.
+     remote: Compressing objects: 100% (20/20), done.
+     remote: Total 40 (delta 15), reused 40 (delta 15), pack-reused 0
+     Unpacking objects: 100% (40/40), done.
+     From github.com:openstack-kr/contributhon-2018-team1
+      * branch            master     -> FETCH_HEAD
+     Auto-merging Vagrant/Vagrant.rst
+     CONFLICT (add/add): Merge conflict in Vagrant/Vagrant.rst
+     Auto-merging GitHub/GitHub.rst
+     CONFLICT (add/add): Merge conflict in GitHub/GitHub.rst
+     Auto-merging DevStack/install.rst
+     CONFLICT (add/add): Merge conflict in DevStack/install.rst
+     Automatic merge failed; fix conflicts and then commit the result.
+ 
+ vi Vagrant/Vagrant.rst GitHub/GitHub.rst DevStack/install.rst   #--- 충돌이 발생한 파일을 수작업으로 최종본으로 수정
+ 
+ cd /work/devstack/contributhon-2018-team1
+ git add *
+ git commit
+ git push                                                   #--- 최종 수정본을 리포지토리에 반영
+
