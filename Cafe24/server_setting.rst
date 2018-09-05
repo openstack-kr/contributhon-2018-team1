@@ -103,3 +103,4 @@ Cafe24에서 받은 서버의 사양을 확인 한다.
  vi /etc/fstab
     /dev/sdb                /data                   ext4    defaults                        1 2
     
+
