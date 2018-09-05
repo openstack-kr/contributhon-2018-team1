@@ -125,4 +125,3 @@ Vagrant 주요 폴더
 
 * /root/VirtualBox VMs/ : VirtualBox의 VM이 저장된 폴더
 
-
