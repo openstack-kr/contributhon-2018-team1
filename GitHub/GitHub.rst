@@ -92,3 +92,36 @@ https://github.com/openstack-kr/contributhon-2018-team1 사이트에서 "Fork" �
  git commit 
  git push origin master                                     #--- origin 저장소의 master에 변경 사항을 반영 한다.
 
+
+=====================
+충돌 발생시 처리 방법
+=====================
+
+여러 리포지토리를 사용하거나 하나의 파일을 여러 사람이 수정하는 경우 충돌이 발생 한다. 이 경우 충돌이 발생한 파일을 수작업으로 수정하여야 한다.
+
+아래의 코드는 충돌 사례와 처리 방법 이다.
+
+::
+ 
+ git pull OpenStack master                                 #--- Pull 명령시 3개의 파일에서 충돌 발생
+     remote: Counting objects: 40, done.
+     remote: Compressing objects: 100% (20/20), done.
+     remote: Total 40 (delta 15), reused 40 (delta 15), pack-reused 0
+     Unpacking objects: 100% (40/40), done.
+     From github.com:openstack-kr/contributhon-2018-team1
+      * branch            master     -> FETCH_HEAD
+     Auto-merging Vagrant/Vagrant.rst
+     CONFLICT (add/add): Merge conflict in Vagrant/Vagrant.rst
+     Auto-merging GitHub/GitHub.rst
+     CONFLICT (add/add): Merge conflict in GitHub/GitHub.rst
+     Auto-merging DevStack/install.rst
+     CONFLICT (add/add): Merge conflict in DevStack/install.rst
+     Automatic merge failed; fix conflicts and then commit the result.
+ 
+ vi Vagrant/Vagrant.rst GitHub/GitHub.rst DevStack/install.rst   #--- 충돌이 발생한 파일을 수작업으로 최종본으로 수정
+ 
+ cd /work/devstack/contributhon-2018-team1
+ git add *
+ git commit
+ git push                                                   #--- 최종 수정본을 리포지토리에 반영
+
