@@ -114,3 +114,15 @@ Snapshot 관리
  vagrant snapshot list                                      #--- Snapshot 목록 조회
  vagrant snapshot delete ${name}                            #--- Snapshot을 삭제
 
+
+=================
+Vagrant 주요 폴더
+=================
+
+* /root/.vagrant.d/
+
+  * boxes/ : Vagrant Box 폴더
+
+* /root/VirtualBox VMs/ : VirtualBox의 VM이 저장된 폴더
+
+
