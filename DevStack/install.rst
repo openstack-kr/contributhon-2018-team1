@@ -74,3 +74,21 @@ Vagrant의 Ubutu VM에서 DevStack 설치
 설치가 완료되면 아래 URL로 DevStack에 접속 한다. 단, IP는 자신의 서버 IP를 사용 한다.
  http://110.10.129.50:8080/dashboard/auth/login/?next=/dashboard/
 
+
+===============
+Putty Tunneling
+===============
+
+Vagrant를 사용하지 않고 CentOS 7 서버에 직접 DevStack를 설치한 경우 Putty Tunneling을 사용하여 OpenStack 화면에 접속할 수 있다.
+
+* Putty을 사용하여 DevStack에 접속 한다.
+* 오른쪽 마우스를 누른 후 "설정변경 > 접속 > SSH > 터널링" 메뉴를 선택하여 아래와 같이 설정 한다.
+
+  * 원 포트 :80
+  * 대상 : 192.168.56.151:80
+
+* "추가" 버튼을 선택 한다.
+* "적용" 버튼을 선택 한다.
+
+브라우저에서 http://localhost/dashboard/ 사이트로 접속 한다.
+
