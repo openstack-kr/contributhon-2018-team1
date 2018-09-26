@@ -79,7 +79,8 @@ Vagrant의 Ubutu VM에서 DevStack 설치
 Putty Tunneling
 ===============
 
-Vagrant를 사용하지 않고 CentOS 7 서버에 직접 DevStack를 설치한 경우 Putty Tunneling을 사용하여 OpenStack 화면에 접속할 수 있다.
+Vagrant를 사용하지 않고 CentOS 7 서버에 직접 DevStack를 설치한 경우
+Putty Tunneling을 사용하여 OpenStack 화면에 접속할 수 있다.
 
 * Putty을 사용하여 DevStack에 접속 한다.
 * 오른쪽 마우스를 누른 후 "설정변경 > 접속 > SSH > 터널링" 메뉴를 선택하여 아래와 같이 설정 한다.

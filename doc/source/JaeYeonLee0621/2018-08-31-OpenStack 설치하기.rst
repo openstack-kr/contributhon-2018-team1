@@ -53,7 +53,8 @@ CentOS 서버에서 vm을 설치하여 그 곳에서 devstack을 설치하려고
 
 쉽게 만들고 쉽게 버릴 수 있으며 다시 그 상태를 쉽게 복원하는 "Code as a Infrastructure" 오픈소스 프로젝트.
 
-즉 ``VirtualBox`` 를 이용하면, 손쉽게 VM환경을 구축할 수 있지만 번거로운 작업이기 때문에 이를 자동화 해주기 위해 개발된 것이 ``Vagrant`` 이다.
+즉 ``VirtualBox`` 를 이용하면, 손쉽게 VM환경을 구축할 수 있지만 번거로운
+작업이기 때문에 이를 자동화 해주기 위해 개발된 것이 ``Vagrant`` 이다.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 2.2 VirtualBox & Vagrant 설치
@@ -125,7 +126,8 @@ Vagrantfile에는 아래와 같은 정보를 입력한다::
 
 ``$ sudo useradd -s /bin/bash -d /opt/stack -m stack`` : 개별의 stack user를 생성한다.
 
-``$ echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack`` : devstack은 system상으로 많은 변화를 만들것이니, sudo 권한을 준다.
+``$ echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack`` :
+devstack은 system상으로 많은 변화를 만들것이니, sudo 권한을 준다.
 
 ``$ sudo su - stack`` :  생성한 stack 으로 사용자를 변경한다.
 
@@ -173,13 +175,16 @@ Vagrantfile에는 아래와 같은 정보를 입력한다::
             collisions:0 txqueuelen:1000
             RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
 
-여기서 ``enp0s3`` 를 보면 ``inet addr:10.0.2.15`` 로  ubuntu가 10.0.2.15 ip로 설정된 것을 볼 수 있다.
+여기서 ``enp0s3`` 를 보면 ``inet addr:10.0.2.15`` 로  ubuntu가 10.0.2.15 ip로
+설정된 것을 볼 수 있다.
 
 이 ip는 아래 local.conf의 HOST_IP에 작성해주면 된다.
 
 ``$ vim local.conf`` : local.conf 파일을 생성한다.
 
-  여기서 localrc, local.conf의 차이를 말씀해 주셨는데, localrc는 옛날 버전이며 local.conf는 최신 버전이라고 한다. local.conf만 생성했다고 해서 localrc가 생성되지 않는 것이 아니라 local.conf안에 localrc가 포함되어있다.
+  여기서 localrc, local.conf의 차이를 말씀해 주셨는데, localrc는 옛날 버전이며
+  local.conf는 최신 버전이라고 한다. local.conf만 생성했다고 해서 localrc가
+  생성되지 않는 것이 아니라 local.conf안에 localrc가 포함되어있다.
 
 local.config 내용 ::
 
@@ -206,17 +211,23 @@ devstack 설치는 20~30분 정도가 소요된다.
 
 보통 문서를 작성할 때는 markdown을 많이 활용한다.
 
-하지만 openstack에서는 **rst(Restructured Text)** 를 사용하는데, 이 문법으로 작성하면 sphinx 라이브러리를 활용하여 html 또는 pdf로 build해 문서를 관리할 수도 있다.
+하지만 openstack에서는 **rst(Restructured Text)** 를 사용하는데, 이 문법으로
+작성하면 sphinx 라이브러리를 활용하여 html 또는 pdf로 build해 문서를 관리할
+수도 있다.
 
-rst 문법을 공부할 때 `오픈스택 문서 <https://github.com/openstack/openstack-manuals/tree/master/doc>`_ , `짧은 문법 소개 <https://gist.github.com/ianychoi/31a00efd06c9a855bfbc15de6ec8d117>`_ 를 참고하여 공부하면 좋다. 
+rst 문법을 공부할 때 `오픈스택 문서 <https://github.com/openstack/openstack-manuals/tree/master/doc>`_
+, `짧은 문법 소개 <https://gist.github.com/ianychoi/31a00efd06c9a855bfbc15de6ec8d117>`_
+를 참고하여 공부하면 좋다. 
 
 2. github
 
 문법을 공부하고 문서를 작성했다면, 해당 문서를 우리 팀의 github에 올려야한다.
 
-일단 github에 들어가면 `openstack team1 <https://github.com/openstack-kr/contributhon-2018-team1/>`_ 오른쪽 위에 ``fork`` 라는 버튼이 보일 것이다.
+일단 github에 들어가면 `openstack team1 <https://github.com/openstack-kr/contributhon-2018-team1/>`_
+오른쪽 위에 ``fork`` 라는 버튼이 보일 것이다.
 
-이 fork는 OS에서 프로세스를 복제한다는 의미로 (처음 알았다..) 해당 github를 똑같이 복제하여 내 repository로 가져오는 것이다.
+이 fork는 OS에서 프로세스를 복제한다는 의미로 (처음 알았다..) 해당 github를
+똑같이 복제하여 내 repository로 가져오는 것이다.
 
 이렇게 **복제한 곳에서는 commit을 하더라도, 본래의 github는 변경되지 않는다.**
 
@@ -266,7 +277,8 @@ commit message를 잘 작성하기 위해서 연습하라고 하셨다.
             collisions:0 txqueuelen:0
             RX bytes:8029129 (7.6 MiB)  TX bytes:8029129 (7.6 MiB)
 
-``eth0`` 에서 ``inet addr`` 를 보면 ip가 있는데 그 ip인 (여기서는 ``110.10.129.22`` )로 openstack dashboard으로 접속할 수 있다.
+``eth0`` 에서 ``inet addr`` 를 보면 ip가 있는데 그 ip인 (여기서는
+``110.10.129.22`` )로 openstack dashboard으로 접속할 수 있다.
 
 http://자신의 ip:8080 으로 접속이 되면 성공이다!!!!
 
@@ -286,11 +298,18 @@ devstack을 조금 더 편리하게 사용하기 위해서, 몇가지 팁과 공
 1.1. Screen 정의
 ~~~~~~~~~~~~~~~~~
 
-- linux에서 물리적인 터미널을 여러 개의 가상 터미널로 다중화해주는 도구이다. 각 screen으로 생성한 가상 터미널은 **독립적으로 동작하며 사용자 세션이 분리되어도 동작** 한다.
+- linux에서 물리적인 터미널을 여러 개의 가상 터미널로 다중화해주는 도구이다.
+  각 screen으로 생성한 가상 터미널은 **독립적으로 동작하며 사용자 세션이
+  분리되어도 동작** 한다.
 
-- 이 도구는 백그라운드로 동작하는 다중 터미널을 만들어 백그라운드 작업을 간단히 수행할 수 있고, 중**간에 끊더라도 다시 접속하면 같은 화면을 볼 수 있도록 한다.** 
+- 이 도구는 백그라운드로 동작하는 다중 터미널을 만들어 백그라운드 작업을
+  간단히 수행할 수 있고, 중**간에 끊더라도 다시 접속하면 같은 화면을 볼 수
+  있도록 한다.** 
 
-- 이를 이용해서 시간이 오래 걸리는 도구를 설치할 때에도 screen을 만들어 설치하고 screen을 나와도 설치는 중단되지 않고 실행되게 할 수 있다. 또한 카폐에서 작업을 하다가 집에 가더라도 screen으로 다시 접속하면 내가 작업하던 부분부터 확인할 수 있다. (!!!!!!)
+- 이를 이용해서 시간이 오래 걸리는 도구를 설치할 때에도 screen을 만들어
+  설치하고 screen을 나와도 설치는 중단되지 않고 실행되게 할 수 있다.
+  또한 카폐에서 작업을 하다가 집에 가더라도 screen으로 다시 접속하면 내가
+  작업하던 부분부터 확인할 수 있다. (!!!!!!)
 
 ~~~~~~~~~~~~~~~~~
 1.2. Screen 설치
