@@ -20,7 +20,8 @@ github에서 ssh 사용하기
 
 > id_rsa : secret key / id_rsa.pub : public key
 
-2. ``내 profile 클릭`` > ``Setting`` > ``SSH and GPG keys`` > ``New GPG key`` > ``id_rsa.pub 내용 붙여넣기``
+2. ``내 profile 클릭`` > ``Setting`` > ``SSH and GPG keys`` > ``New GPG key``
+   > ``id_rsa.pub 내용 붙여넣기``
 
 3. Clone시 ssh사용하기
 
@@ -52,7 +53,8 @@ github pull request
 
 2. branch 생성하기
 
-``$ git checkout -b branch_name`` : branch_name으로 branch를 생성하고, 새로운 branch에는 기존의 내용을 copy한 내용이 담겨있다.
+``$ git checkout -b branch_name`` : branch_name으로 branch를 생성하고, 새로운
+branch에는 기존의 내용을 copy한 내용이 담겨있다.
 
 3. 변경된 파일 push하기
 
@@ -82,7 +84,8 @@ local에서 만든 branch의 내용을 github에는 새로운 branch_name으로 
 
 +) git branch 삭제하기
 
-``git push origin :0906`` : 0906이라는 브랜치에 빈 값을 넣겠다 즉 0906이라는 branch를 없애 겠다는 의미이다.
+``git push origin :0906`` : 0906이라는 브랜치에 빈 값을 넣겠다 즉 0906이라는
+branch를 없애 겠다는 의미이다.
 
 그리고 해당 branch로 pull request한 issue는 closed가 된다.
 
@@ -94,7 +97,8 @@ openstack sandbox에서 contribution 해보기
 
 처음 commit하는 commiter를 위한 ``openstack-dev/sandbox`` 가 존재한다.
 
-``$ git clone git://git.openstack.org/openstack-dev/sandbox`` 로 해당 github의 내용을 가져온다.
+``$ git clone git://git.openstack.org/openstack-dev/sandbox`` 로 해당 github의
+내용을 가져온다.
 
 2. sync 작업하기
 
