@@ -29,8 +29,8 @@ OpenStack Korea
   <https://openstackkr.slack.com/>`_ (`Join
   <http://openstack-checkin.herokuapp.com/>`_ [#]_)
 * `Discussion
-  <http://lists.openstack.org/cgi-bin/mailman/listinfo/openstack-ko/>`_ (`Archive
-  <http://lists.openstack.org/pipermail/openstack-ko/>`_)
+  <http://lists.openstack.org/cgi-bin/mailman/listinfo/openstack-ko/>`_ 
+  (`Archive <http://lists.openstack.org/pipermail/openstack-ko/>`_)
 * `I18N 
   <https://docs.openstack.org/i18n/latest/ko_KR/index.html>`_ [#]_
 * `I18n Team
@@ -39,6 +39,8 @@ OpenStack Korea
   <https://wiki.openstack.org/wiki/%EB%8B%A8%EC%96%B4%EC%A7%91>`_ [#]_
 * `SlideShare
   <https://www.slideshare.net/openstack_kr/presentations/>`_ [#]_
+* `Youtube
+  <https://www.youtube.com/channel/UCVQ1ILIOsGH-YX9FkEmkjRQ/>`_
     
 OpenStack
 =========
@@ -69,14 +71,17 @@ OpenStack
 
 -----
 
-.. [#] Slack 가입 신청 URL(http://openstack-checkin.herokuapp.com/), 가입 승인 후에 Slack 참여 가능
+.. [#] Slack 가입 신청 URL(http://openstack-checkin.herokuapp.com/), 
+   가입 승인 후에 Slack 참여 가능
 .. [#] OpenStack 국제화 프로젝트 가이드
 .. [#] I18N 한국 번역 팀
 .. [#] 번역 단어집
 .. [#] 발표 자료 (+ http://slideshare.net/ianychoi/)
-.. [#] API 가이드 URL(https://developer.openstack.org/ko_KR/api-guide/quick-start/)
+.. [#] API 가이드 URL
+   (`<https://developer.openstack.org/ko_KR/api-guide/quick-start/>`_)
 .. [#] Zanata
-.. [#] Gerrit, openstack-dev/sandbox URL(https://review.openstack.org/#/admin/projects/openstack-dev/sandbox/)
+.. [#] Gerrit, openstack-dev/sandbox URL
+   (`<https://review.openstack.org/#/admin/projects/openstack-dev/sandbox/>`_)
 .. [#] StoryBoard
 .. [#] Git Mirror
 .. [#] LaunchPad
