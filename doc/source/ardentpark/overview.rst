@@ -116,7 +116,7 @@ Contributhon 2018 OpenStack Team Meeting Overview
  `9/6 영상 링크
  <http://youtu.be/oUX945cyuUE>`_
 
-
+.. 세부 내용 추가 예정
 
 
 [20180914] 4차 모임
@@ -124,7 +124,7 @@ Contributhon 2018 OpenStack Team Meeting Overview
  `9/14 영상 링크
  <https://youtu.be/vOnIIUO7yew>`_
 
-
+.. 세부 내용 추가 예정
 
 
 [20180920] 5차 모임
@@ -132,8 +132,8 @@ Contributhon 2018 OpenStack Team Meeting Overview
  `9/20 영상 링크
  <http://youtu.be/FwziRyz5MI0>`_
 
-
+.. 세부 내용 추가 예정
 
 -----
 
-.. [*] 2018년 9월 27일 기준
+.. [*] 2018년 9월 30일 기준
