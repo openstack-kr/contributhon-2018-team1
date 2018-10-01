@@ -19,8 +19,10 @@ Progress
 +=======================+=========================+=============+==========+
 | openstack-helm        | | doc/source/locale/doc | | 81.44%    | | 완료   |
 | (master)              | | doc/source/locale/    | | 100%      | | 완료   |
-|                       |   doc-devref            | | 59.13%    | |        |
-|                       | | doc/source/locale/    | | 100%      | | 완료   |
+|                       | | doc/source/locale/    | | 16.12%    | |        |
+|                       |   doc-install           | | 59.13%    | |        | 
+|                       |   doc-devref            | | 100%      | | 완료   |
+|                       | | doc/source/locale/    |             |          |
 |                       |   doc-testing           |             |          |
 |                       | | doc/source/locale/    |             |          |
 |                       |   doc-troubleshooting   |             |          |
@@ -29,7 +31,7 @@ Progress
 |                       |   djangojs              | | 1.56%     | | 완료   |
 |                       | | openstack_auth/       | | 0.62%     | | 완료   |
 |                       |   locale/django         | | 2.71%     | | 완료   |
-|                       | | openstack_dashboard/  | | 47.04%    |          |
+|                       | | openstack_dashboard/  | | 62.23%    |          |
 |                       |   locale/django         |             |          |
 |                       | | openstack_dashboard/  |             |          |
 |                       |   locale/djangojs       |             |          |
@@ -82,9 +84,11 @@ Log
  20180929 leveraging-containers-and-openstack(paper)/
  leveraging-containers-and-openstack 278
  20180929 openstack-helm(master)/doc/source/locale/doc-testing 812
+ 20181001 horizon(master)/doc/source/locale/doc-install 265
+ 20181001 openstack-helm(master)/doc/source/locale/doc-install 412
 
 -----
 
-.. [*] 2018년 9월 30일 기준
+.. [*] 2018년 10월 1일 기준
 .. [*] (번역 단어 수 / 총 단어 수) * 100
 .. [*] yyyyMMdd 프로젝트/문서 단어수

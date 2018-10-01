@@ -42,7 +42,29 @@ Contributhon I18N Project
 * `번역 툴 개발 <http://specs.openstack.org/openstack/docs-specs/specs/
   ocata/build-pdf-from-rst-guides.html>`_ :
   rst 포맷으로 작성된 웹 상의 OpenStack 설명서들을 pdf 문서로 빌드하여
-  제공(한글 문서 포함)할 수 있도록 하는 번역 툴 개발
+  제공(한글 문서 포함)할 수 있도록 하는 문서화 툴 개발
 
 * 비영문 문서의 영문 문서화 : openstack-helm에 관한 한국 팀에서의
   한글 문서를 영문 문서로 번역하는 파일럿 프로젝트를 추진 고려
+
+팀 구성
+=======
+
+멘토
+````
+ * **최영락**
+ * **강성진**
+
+팀원
+````
+* Team 1
+
+ * **김계현**
+ * **박순렬**
+ * **이도건**
+ * **조재호**
+
+* Team 2
+
+ * **임동빈**
+ * **최성욱**
