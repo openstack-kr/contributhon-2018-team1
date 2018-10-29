@@ -1,1 +1,0 @@
-Openstack Swift Contribution
