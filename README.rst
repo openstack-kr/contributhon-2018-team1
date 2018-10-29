@@ -12,19 +12,16 @@ participants.
  * 컨트리뷰톤 홈페이지: https://contributhon.kr/
  * 오픈스택 한국 커뮤니티 페이스북: https://www.facebook.com/groups/openstack.kr
  * Slack (초대 필요): https://openstackkr.slack.com/messages/GC9R9RFA9/
+ * 1팀 rst 문서: http://contributhon-2018-team1.readthedocs.io/
 
 * 팀원 (가나다순)
 
- * 강상규
  * 김계현
- * 김선오
  * 박순렬
- * 배중욱
- * 이도건
- * 이우람
- * 이재연
- * 이형건
+ * 인정우
+ * 임동빈
  * 조재호
+ * 최성욱
 
 Recommended References
 ======================
@@ -50,18 +47,6 @@ Day 0: (사전 모임)
   
  * 멘토 소개
  * 프로젝트 진행을 위한 멘토-멘티 연결
-
-Day 1: Aug 31, 2018
-===================
-
- * DevStack 설명
- * Python 프로젝트에 대한 virtualenv, tox 등 빌드 환경 소개
- * 컨트리뷰톤 프로젝트 논의
-
-Day 2: (TBD)
-============
-
- * (TBD)
 
 Contributing
 ============
